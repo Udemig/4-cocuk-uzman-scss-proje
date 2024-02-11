@@ -21,56 +21,74 @@
   <body>
     <!-- header start -->
     <header>
-      <div class="logo">LOGO</div>
+      <div class="header_top">
+        <div class="logo">LOGO</div>
 
-      <div class="navbar">
-        <li>
-          <a href="#">Ana Sayfa</a>
-          <div class="line"></div>
-        </li>
-        <li>
-          <a href="#">Hakkımızda</a>
-          <div class="line"></div>
-        </li>
-        <li>
-          <a href="#">İletişim</a>
-          <div class="line"></div>
-        </li>
-        <li>
-          <a href="#">Projeler</a>
-          <div class="line"></div>
-        </li>
+        <div class="navbar">
+          <li>
+            <a href="#anasayfa">Ana Sayfa</a>
+            <div class="line"></div>
+          </li>
+          <li>
+            <a href="#hakkimizda">Hakkımızda</a>
+            <div class="line"></div>
+          </li>
+          <li>
+            <a href="#iletisim">İletişim</a>
+            <div class="line"></div>
+          </li>
+          <li>
+            <a href="#projeler">Projeler</a>
+            <div class="line"></div>
+          </li>
+          <li style="border: 1px solid white; padding: 5px; border-radius: 5px">
+            <a href="images/cv.pdf" download>Dosya Indir</a>
+          </li>
+        </div>
+
+        <div class="res_menu">
+          <details>
+            <summary>
+              <i class="bi bi-list"></i>
+            </summary>
+            <div class="opt">
+              <li>
+                <a href="#anasayfa">Ana Sayfa</a>
+                <div class="line"></div>
+              </li>
+              <li>
+                <a href="#hakkimizda">Hakkımızda</a>
+                <div class="line"></div>
+              </li>
+              <li>
+                <a href="#iletisim">İletişim</a>
+                <div class="line"></div>
+              </li>
+              <li>
+                <a href="#projeler">Projeler</a>
+                <div class="line"></div>
+              </li>
+              <li
+                style="
+                  border: 1px solid white;
+                  padding: 5px;
+                  border-radius: 5px;
+                "
+              >
+                <a href="images/cv.pdf" download>Dosya Indir</a>
+              </li>
+            </div>
+          </details>
+        </div>
       </div>
 
-      <div class="res_menu">
-        <details>
-          <summary>
-            <i class="bi bi-list"></i>
-          </summary>
-          <div class="opt">
-            <li>
-              <a href="#">Ana Sayfa</a>
-              <div class="line"></div>
-            </li>
-            <li>
-              <a href="#">Hakkımızda</a>
-              <div class="line"></div>
-            </li>
-            <li>
-              <a href="#">İletişim</a>
-              <div class="line"></div>
-            </li>
-            <li>
-              <a href="#">Projeler</a>
-              <div class="line"></div>
-            </li>
-          </div>
-        </details>
-      </div>
+      <div class="scroll_bar"></div>
     </header>
+
     <!-- header end -->
 
-    <section>
+    <!-- section 1 start -->
+    <section id="anasayfa">
       <div class="text-container">
         <div class="year">2024</div>
         <h3>Ömer <span>Yasin</span> Demir</h3>
@@ -81,10 +99,10 @@
           Saepe, maiores veniam?
         </p>
         <div class="social_icons">
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-whatsapp"></i>
-            <i class="bi bi-messenger"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-messenger"></i>
         </div>
       </div>
 
@@ -92,5 +110,119 @@
         <img src="/images/section-1.png" alt="" />
       </div>
     </section>
+    <!-- section 1 end -->
+
+    <!-- yetenekler start -->
+    <div id="hakkimizda" class="skills_section">
+      <div class="title">
+        <h2>Neler Yapabiliriz ?</h2>
+        <h4>Yeteneklerimiz</h4>
+      </div>
+      <div class="skills">
+        <div class="skill_item">
+          <img
+            src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png"
+            alt=""
+          />
+          <h3>HTML5</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+            provident.
+          </p>
+        </div>
+        <div class="skill_item">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png"
+            alt=""
+          />
+          <h3>CSS3</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+            provident.
+          </p>
+        </div>
+        <div class="skill_item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+            alt=""
+          />
+          <h3>Javascript</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+            provident.
+          </p>
+        </div>
+        <div class="skill_item">
+          <img
+            src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png"
+            alt=""
+          />
+          <h3>Bootstrap</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+            provident.
+          </p>
+        </div>
+        <div class="skill_item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+            alt=""
+          />
+          <h3>React JS</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+            provident.
+          </p>
+        </div>
+        <div class="skill_item">
+          <img
+            src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"
+            alt=""
+          />
+          <h3>Node JS</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+            provident.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- yetenekler end -->
+
+    <!-- about start -->
+    <section id="iletisim">
+      <div class="image-container">
+        <img
+          src="https://blog.texasbar.com/files/2011/12/housto-bankruptcy-attorney-adam-schachter1.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="text-container">
+        <div class="year">2024</div>
+        <h3>Hakkımda</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, in
+          omnis deleniti officia molestias nisi perspiciatis ad animi aliquid
+          autem, sapiente nostrum, accusamus numquam debitis tempore enim.
+          Saepe, maiores veniam?
+        </p>
+        <div class="social_icons">
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-messenger"></i>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+    
+    <!-- footer start -->
+    <footer>
+
+      &copy; Tüm hackları saklıdır :/
+    </footer>
+    <!-- footer end -->
+  
   </body>
 </html>

@@ -1,0 +1,98 @@
+@import "animations";
+
+header{
+
+    .header_top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    background-color: var(--bg-color);
+    z-index: 99;
+
+    
+
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .scroll_bar{
+        height: 3px;
+        width: 0%;
+        background-color: var(--text-color);
+      
+        animation: scroll-watcher linear;
+        animation-timeline: scroll();
+      }
+
+    .header_top .res_menu{
+        display: none;
+        
+        
+
+        details summary{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            margin-top: -10px;
+            font-size: 24px;
+        }
+
+        details .opt{
+            position: fixed;
+            left: 0;
+            padding: 20px;
+            margin-top: 30px;
+            width: 100%;
+            background-color: var(--bg-color);
+            border-bottom: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+       
+    }
+
+    .header_top .navbar{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        li{
+            a{
+                color: var(--text-color);
+            }
+
+            .line{
+                height: 2px;
+                width: 0%;
+                background-color: var(--text-color);
+
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        li:hover .line{
+            width: 100%;
+        }
+    }
+
+
+}
+
+@media (max-width: 700px){
+    header .header_top .res_menu{
+        display: flex;
+        align-items: center;
+
+    }
+    header .header_top .navbar{
+        display: none;
+    }
+}
